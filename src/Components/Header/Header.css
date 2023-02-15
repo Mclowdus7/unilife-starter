@@ -1,0 +1,40 @@
+.header-container {
+   height: var(--header-height);
+   width: 100%;
+   background-color: var(--blue);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: var(--white);
+}
+
+.logo-container {
+   padding-left: 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 185px;
+}
+
+.name {
+width: 102.19px;
+height: 17px;
+}
+
+.links-container {
+   padding-right: 40px;
+}
+
+.links-container a {
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: var(--white);
+margin: 25px;
+}
+
+.icon {
+   margin-left: 5px;
+   
+}

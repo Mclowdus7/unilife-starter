@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'epilogue';
+}
+
+:root{
+    --blue: #00A2E1;
+    --white: #FFFFFF;
+    --placeholder-text: #CED3D8;
+    --bottom-bar-bg: black;
+    --header-height: 70px;
+    --footer-contact-height: 374px;
+    --bottom-bar-height: 97px;
+  }
