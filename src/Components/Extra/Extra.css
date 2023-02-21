@@ -1,0 +1,10 @@
+.extra-info-container {
+    display: flex;
+    margin-top: 50px;
+}
+
+h3 {
+    font-size: xx-large;
+    text-align: left;
+    margin-bottom: 10px;
+}

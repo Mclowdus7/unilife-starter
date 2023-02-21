@@ -1,0 +1,14 @@
+.info-box{
+    height: 288px;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-box p, h3 {
+    width: 50%;
+    text-align: center;
+}
+

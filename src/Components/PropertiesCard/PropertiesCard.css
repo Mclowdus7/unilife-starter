@@ -1,0 +1,28 @@
+.property-card {
+    margin: 20px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-overlay{
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+    position: absolute;
+    border-radius: 22px;
+    height: 100%;
+    width: 100%;
+    /* height and width based on parent */
+}
+
+.property-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

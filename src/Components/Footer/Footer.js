@@ -28,7 +28,8 @@ function Footer() {
             </div>
             <div className='bottom-bar-info'>
                 <p>2022</p>
-                <p>© Unilife</p>
+                <p>©</p>
+                <p>Unilife</p>
             </div>
         </div>
     </div>

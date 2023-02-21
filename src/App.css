@@ -9,6 +9,8 @@
 :root{
     --blue: #00A2E1;
     --white: #FFFFFF;
+    --light-blue: #F6FAFD;
+    --button: #3A5295;
     --placeholder-text: #CED3D8;
     --bottom-bar-bg: black;
     --header-height: 70px;
