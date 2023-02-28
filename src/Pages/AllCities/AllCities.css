@@ -1,0 +1,26 @@
+.cities-button-container {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.cities-button-container button {
+    background-color: var(--white);
+    border: 1px solid #CED3D8;
+    width: 302px;
+    height: 88px;
+    color: black;
+    font-weight: 900;
+}
+
+.cities-button-container button:hover {
+    background-color: var(--button);
+    color: var(--white);
+}
+
+h2 {
+    text-align: center;
+}

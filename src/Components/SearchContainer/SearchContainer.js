@@ -5,7 +5,7 @@ function SearchContainer() {
   return (
     <div className='search-container'>
         <select>
-            <option value="" disabled selected>Searh by city</option>
+            <option value="" disabled selected>Search by city</option>
         </select>
         <select>
             <option value="" disabled selected>Any bedroom</option>
