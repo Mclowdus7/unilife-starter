@@ -26,22 +26,28 @@ function CityDetails() {
             
         })
         .catch(err => console.log(err))
+   
+},[] 
 
+)
+
+
+React.useEffect(
+      ()=>{
+       
         axios.get(`https://unilife-server.herokuapp.com/cities/${city_id}`)
         .then(res =>{
-            console.log(res.data.data[0])
-            // setCityInfo(res.data.data[0])
+            // console.log(res.data.data[0])
+            setCityInfo(res.data.data[0])
             // console.log(cityInfo)
 
             
             
         })
         .catch(err => console.log(err))
-   
-},[] 
-
-)
-
+      
+      },[]
+    )
 
 
 
@@ -51,14 +57,15 @@ function CityDetails() {
           title={detailsTitle}
           slogan={detailsSlogan} />
           <SearchProperty />
-          
+          <h2>{cityInfo?.property_count} properties in {cityInfo?.name}</h2>
           <div className='property-card-container'>
           {
             properties.map(item =><CityPropertyCard
               property={item} />)
           }
           </div>
-          
+          <CityInfo 
+          city={cityInfo} />
     
     </div>
   )
