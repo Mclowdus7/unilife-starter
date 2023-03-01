@@ -13,9 +13,3 @@
     justify-content: space-around;
     padding-top: 30px;
 }
-
-button {
-    background-color: var(--button);
-    color: var(--white);
-    margin: 30px 0;
-}

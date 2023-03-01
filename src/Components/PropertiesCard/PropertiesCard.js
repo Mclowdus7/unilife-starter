@@ -1,5 +1,6 @@
 import React from 'react'
 import './PropertiesCard.css'
+import { Link } from 'react-router-dom'
 
 function PropertiesCard({property}) {
 
@@ -15,7 +16,7 @@ function PropertiesCard({property}) {
     }
 
   return (
-    <div className='property-card'>
+    <Link to={`/citydetails/${property?._id}`} className='property-card'>
       <div style={imageStyle}>
         <div className='card-overlay'></div>
             <div className='property-text'>
@@ -23,7 +24,8 @@ function PropertiesCard({property}) {
                 <p>{property.property_count} properties</p>
             </div>
         </div>
-    </div>
+    </Link>
+  
   )
 }
 

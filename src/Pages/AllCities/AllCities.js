@@ -1,6 +1,7 @@
 import React from 'react'
 import './AllCities.css'
 import BannerPic from '../../Components/BannerPic/BannerPic'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 function AllCities() {
@@ -14,13 +15,14 @@ function AllCities() {
         ()=>{
             axios.get('https://unilife-server.herokuapp.com/cities?limit=20')
             .then(res =>{
-                console.log(res.data.response)
+                // console.log(res.data.response)
                 setCities(res.data.response)
+                
             })
             .catch(err => console.log(err))
         },[] //
     )
-
+    
   return (
     <div className='cities-container'>
       <BannerPic 
@@ -29,9 +31,14 @@ function AllCities() {
             <h2>Search by City</h2>
       <div className='cities-button-container'>
         {
-            cities.map(item =><button>{item?.name}</button>)
+            cities.map(item => (
+            
+            <Link to = {`/citydetails/${item?._id}`}>
+            <button>{item?.name}</button></Link>)
+            )
             // cities.map(item => console.log(cities?.name))
         }
+        
       </div>
     </div>
   )

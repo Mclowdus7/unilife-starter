@@ -11,6 +11,7 @@ import househHand from '../../assets/househand.png'
 import BannerPic from '../../Components/BannerPic/BannerPic'
 import Properties from '../../Components/Properties/Properties'
 import SearchContainer from '../../Components/SearchContainer/SearchContainer'
+import { Link } from 'react-router-dom'
 
 
 function Homepage() {
@@ -36,6 +37,11 @@ function Homepage() {
            slogan={homepageSlogan} />
       <SearchContainer />
       <Properties />
+      <div className='buttons-container'>
+            <Link to="/cities">
+            <button className='all-cities-button'>See all cities</button>
+            </Link>
+      </div>
       <h2>Compare all inclusive student homes.</h2>
       <div className='info-box-container'>
           <InfoBox 
