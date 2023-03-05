@@ -15,8 +15,8 @@ function Header() {
             <img className='name' alt='name' src={unilife} />
         </div>
         <div className='links-container'>
-            <a href=''><SlHeart className='icon' />Shortlist</a>
-            <a href=''><SlEnvolope className='icon' />Contact Us</a>
+            <p><SlHeart className='icon' />Shortlist</p>
+           <Link to={'/contact'}><p><SlEnvolope className='icon' />Contact Us</p></Link>
         </div>
       
     </div>

@@ -12,7 +12,7 @@ function CityPropertyCard({property}) {
     
 
   return (
-    <Link to={`/propertydetails/${property?._id}`} className='city-property-card'>
+    <div className='city-property-card'>
         <img src={property.images[0]}/>
         <div className='blue-bar'>
             <div className='blue-left'>
@@ -44,9 +44,9 @@ function CityPropertyCard({property}) {
         </div>
         <div className='view-button'>
                 <img src={home} />
-                <p>View Home</p>
+                <Link to={`/propertydetails/${property?._id}`}><p>View Home</p></Link>
         </div>
-    </Link>
+    </div>
   )
 }
 

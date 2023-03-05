@@ -29,7 +29,7 @@
 @media (min-width: 481px) and (max-width:768px){
 
 .property-card {
-    width: 220px;
-
+    width: 200px;
+    margin: 15px;
     }
 }

@@ -20,4 +20,9 @@
         
     }
 
+    .properties-wrapper{
+        margin-right: 100px;
+        justify-content: space-between;
+    }
+
 }

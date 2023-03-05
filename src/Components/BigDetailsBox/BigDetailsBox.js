@@ -3,8 +3,12 @@ import './BigDetailsBox.css'
 import bluebath from '../../assets/bluebath.png'
 import bluebed from '../../assets/bluebed.png'
 import {SlHeart} from "react-icons/sl";
+import {Link} from 'react-router-dom';
 
 function BigDetailsBox({details}) {
+
+        
+        
   return (
     <div className='big-details-container'>
             <div className='address-box'>
@@ -50,7 +54,7 @@ function BigDetailsBox({details}) {
             </div>
             <div className='button-container'>
                     <button className='shortlist'><SlHeart className='heart' />Shortlist</button>
-                    <button className='book'>Book Viewing</button>
+                    <Link to={`/booking/${details?._id}`}><button className='book'>Book Viewing</button></Link>
             </div>
     </div>
   )

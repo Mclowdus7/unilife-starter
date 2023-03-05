@@ -24,3 +24,16 @@
     justify-content: space-between;
     
 }
+
+@media (min-width: 481px) and (max-width:768px){
+    .property-image-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .small-img-container{
+        display: flex;
+        justify-content: center;
+    }
+}

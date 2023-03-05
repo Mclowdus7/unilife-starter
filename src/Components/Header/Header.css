@@ -23,9 +23,10 @@ height: 17px;
 
 .links-container {
    padding-right: 40px;
+   display: flex;
 }
 
-.links-container a {
+.links-container p {
 font-style: normal;
 font-weight: 400;
 font-size: 16px;

@@ -1,6 +1,5 @@
 import React from 'react'
 import axios from 'axios'
-import CityPropertyCard from '../../Components/CityPropertyCard/CityPropertyCard'
 import PropertyDetailsPhotos from '../../Components/PropertyDetailsPhotos/PropertyDetailsPhotos'
 import {useParams} from 'react-router-dom'
 import PropertyDescription from '../../Components/PropertyDescription/PropertyDescription'
@@ -41,6 +40,7 @@ function PropertyDetails() {
         />
         <BigDetailsBox 
             details={propertyInfo}
+            address={propertyInfo?.address}
         />
     </div>
   )

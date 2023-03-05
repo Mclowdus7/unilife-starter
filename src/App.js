@@ -7,6 +7,8 @@ import AllCities from './Pages/AllCities/AllCities';
 import CityDetails from './Pages/CityDetails/CityDetails';
 import PropertyDetails from './Pages/PropertyDetails/PropertyDetails';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import BookingForm from './Components/BookingForm/BookingForm';
+import ContactForm from './Components/ContactForm/ContactForm';
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
                   <Route path="/cities" element={<AllCities />} />
                   <Route path="/citydetails/:city_id" element={<CityDetails />} />
                   <Route path="/propertydetails/:id" element={<PropertyDetails />} />
+                  <Route path="/booking/:id" element={<BookingForm />} />
+                  <Route path='/contact' element={<ContactForm />} />
               </Routes>
           <Footer />
        </BrowserRouter>

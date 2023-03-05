@@ -13,6 +13,7 @@
     border-radius: 24px;
 }
 
+
 .extra-info-container {
     width: 75%;
    
@@ -71,6 +72,15 @@ h2 {
         justify-content: space-around;
         text-align: center;
         
+    }
+
+   
+    /* .extra-info-container{
+        display:none;
+    } */
+
+    .extra-icons, .extra-img, .extra-text{
+        display: none;
     }
 
 
