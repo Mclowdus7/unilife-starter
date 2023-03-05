@@ -1,0 +1,11 @@
+.description-container {
+    text-align: left;
+    height: 200px;
+    width: 450px;
+    line-height: 1.4;
+    margin: 40px 20px;
+}
+
+h2 {
+    text-align: left;
+}

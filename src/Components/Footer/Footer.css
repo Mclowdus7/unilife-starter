@@ -74,3 +74,25 @@ text-indent: 5%;
     margin-right: 10px;
 }
 
+@media (min-width: 481px) and (max-width:768px) {
+    input{
+        width: 275px;
+    }
+
+    .bottom-bar-links{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        justify-content: space-evenly;
+    }
+
+    .footer-bottom-bar {
+        height: 20vh;
+    }
+
+    .bottom-bar-info{
+        align-items: flex-end;
+        height: 80%;
+    }
+
+}

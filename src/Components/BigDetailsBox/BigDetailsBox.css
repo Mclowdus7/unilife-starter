@@ -1,0 +1,97 @@
+.big-details-container{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin: 40px 20px;
+}
+
+.address-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CED3D8;
+    border-radius: 24px 24px 0 0;
+    justify-content: center;
+    align-content: center;
+    /* background-color: yellow; */
+    height: 200px;
+}
+
+.street-city {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+.details-box{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid #CED3D8;
+    border-radius: 0 0 24px 24px;
+    width: 550px;
+    height: 375px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.bedrooms{
+    display: flex;
+    flex-direction: column;
+}
+
+.bedroom-count{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.bathroom-count{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.bathrooms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.details-box h4 {
+    margin-bottom: 10px;
+  
+}
+
+.details-box h3 {
+    color: var(--button);
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.shortlist{
+    background-color: white;
+    color: black;
+    width: 250px;
+}
+
+.book{
+    width: 250px;
+}
+
+
+

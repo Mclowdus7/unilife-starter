@@ -26,8 +26,8 @@ h2 {
     text-align: center;
 }
 
-/* button {
-    background-color: var(--button);
-    color: var(--white);
-    margin-top: 30px;
-} */
+@media (min-width: 481px) and (max-width:768px) {
+    .cities-container h2 {
+        text-align: center;
+    }
+}

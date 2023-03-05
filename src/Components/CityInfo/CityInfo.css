@@ -21,4 +21,20 @@
     border-radius: 24px;
 }
 
+@media (min-width: 481px) and (max-width:768px) {
+    .city-info-container{
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
+    .city-info-text{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .city-info-image img{
+        height: 400px;
+        width: 575px
+
+    }
+}

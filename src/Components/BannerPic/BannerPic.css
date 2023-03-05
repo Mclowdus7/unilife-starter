@@ -30,3 +30,22 @@
     align-items: center;
     text-align: center;
 }
+
+@media (min-width: 481px) and (max-width:768px) {
+
+    .banner-container{
+        flex-wrap: wrap;
+    }
+
+    .banner-pic-text{
+        position: absolute;
+        color: var(--white);
+        width: 40%;
+        left: 245px;
+        top: 100px;
+        font-size:x-large;
+        
+    }
+
+
+}

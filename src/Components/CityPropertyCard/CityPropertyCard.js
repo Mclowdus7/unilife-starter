@@ -5,13 +5,14 @@ import bathroom from '../../assets/bathroom.png'
 import home from '../../assets/home.png'
 import {useParams} from 'react-router-dom'
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 
 function CityPropertyCard({property}) {
 
     
 
   return (
-    <div className='city-property-card'>
+    <Link to={`/propertydetails/${property?._id}`} className='city-property-card'>
         <img src={property.images[0]}/>
         <div className='blue-bar'>
             <div className='blue-left'>
@@ -45,7 +46,7 @@ function CityPropertyCard({property}) {
                 <img src={home} />
                 <p>View Home</p>
         </div>
-    </div>
+    </Link>
   )
 }
 

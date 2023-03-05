@@ -13,3 +13,11 @@
     justify-content: space-around;
     padding-top: 30px;
 }
+
+@media (min-width: 481px) and (max-width:768px){
+    .properties-container{
+        flex-wrap: wrap;
+        
+    }
+
+}
