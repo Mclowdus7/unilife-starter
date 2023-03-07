@@ -11,3 +11,12 @@
     justify-content: space-around;
     align-items: center;
 }
+
+@media (min-width: 481px) and (max-width:768px) {
+    .property-card-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}

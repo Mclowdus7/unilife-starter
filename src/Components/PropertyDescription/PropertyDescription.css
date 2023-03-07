@@ -10,3 +10,10 @@ h2 {
     text-align: left;
 }
 
+@media (min-width: 481px) and (max-width:768px){
+    .description-container{
+        margin-top: 0px;
+        
+      
+    }
+}

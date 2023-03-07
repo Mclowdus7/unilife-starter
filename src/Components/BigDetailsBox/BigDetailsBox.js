@@ -15,10 +15,11 @@ function BigDetailsBox({details}) {
                 <div className='street-city'>
                         <h3>{details?.address?.street}</h3>
                         <h3>{details?.address?.city}</h3>
-                </div>
-                <div className='post-code'>
                         <h3>{details?.address?.postcode}</h3>
                 </div>
+                {/* <div className='post-code'>
+                        <h3>{details?.address?.postcode}</h3>
+                </div> */}
             </div>
             <div className='details-box'>
                     <div className='bedrooms'>

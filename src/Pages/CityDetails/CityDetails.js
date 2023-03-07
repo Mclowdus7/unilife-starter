@@ -26,15 +26,7 @@ function CityDetails() {
             
         })
         .catch(err => console.log(err))
-   
-},[] 
 
-)
-
-
-React.useEffect(
-      ()=>{
-       
         axios.get(`https://unilife-server.herokuapp.com/cities/${city_id}`)
         .then(res =>{
             // console.log(res.data.data[0])
@@ -45,9 +37,28 @@ React.useEffect(
             
         })
         .catch(err => console.log(err))
+   
+},[] 
+
+)
+
+
+// React.useEffect(
+//       ()=>{
+       
+//         axios.get(`https://unilife-server.herokuapp.com/cities/${city_id}`)
+//         .then(res =>{
+//             // console.log(res.data.data[0])
+//             setCityInfo(res.data.data[0])
+//             // console.log(cityInfo)
+
+            
+            
+//         })
+//         .catch(err => console.log(err))
       
-      },[]
-    )
+//       },[]
+//     )
 
 
 

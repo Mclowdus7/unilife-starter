@@ -5,6 +5,7 @@ import {useParams} from 'react-router-dom'
 import PropertyDescription from '../../Components/PropertyDescription/PropertyDescription'
 import KeyFeatures from '../../Components/KeyFeatures/KeyFeatures'
 import BigDetailsBox from '../../Components/BigDetailsBox/BigDetailsBox'
+import './PropertyDetails.css'
 
 function PropertyDetails() {
 
@@ -28,20 +29,22 @@ function PropertyDetails() {
   return (
     <div className='property-details-container'>
         <PropertyDetailsPhotos
-            className='photos'
             property={propertyInfo}
-        />
-        <PropertyDescription
-            className='description'
-            description={propertyInfo}
-        />
-        <KeyFeatures 
-            features={propertyInfo}
         />
         <BigDetailsBox 
             details={propertyInfo}
             address={propertyInfo?.address}
         />
+        <PropertyDescription
+            description={propertyInfo}
+        />
+        <div className='prices'>
+            Bedroom Prices
+        </div>
+        <KeyFeatures 
+            features={propertyInfo}
+        />
+       
     </div>
   )
 }
