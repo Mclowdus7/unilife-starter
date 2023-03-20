@@ -6,6 +6,7 @@ import PropertyDescription from '../../Components/PropertyDescription/PropertyDe
 import KeyFeatures from '../../Components/KeyFeatures/KeyFeatures'
 import BigDetailsBox from '../../Components/BigDetailsBox/BigDetailsBox'
 import './PropertyDetails.css'
+import BedroomPrices from '../../Components/BedroomPrices/BedroomPrices'
 
 function PropertyDetails() {
 
@@ -38,9 +39,10 @@ function PropertyDetails() {
         <PropertyDescription
             description={propertyInfo}
         />
-        <div className='prices'>
-            Bedroom Prices
-        </div>
+        <BedroomPrices 
+            prices={propertyInfo?.bedroom_prices}
+            
+        />
         <KeyFeatures 
             features={propertyInfo}
         />

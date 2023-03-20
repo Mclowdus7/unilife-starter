@@ -7,6 +7,13 @@ import {Link} from 'react-router-dom';
 
 function BigDetailsBox({details}) {
 
+        const [added, setAdded] = React.useState(false)
+
+        const handleShortlist = () => {
+                setAdded(!false)
+                //save in local storage
+                
+              }
         
         
   return (
@@ -54,7 +61,7 @@ function BigDetailsBox({details}) {
                     </div>
             </div>
             <div className='button-container'>
-                    <button className='shortlist'><SlHeart className='heart' />Shortlist</button>
+                    <button onClick={handleShortlist} className='shortlist'><SlHeart className='heart' />{added? "Added!" : "Shortlist"}</button>
                     <Link to={`/booking/${details?._id}`}><button className='book'>Book Viewing</button></Link>
             </div>
     </div>
