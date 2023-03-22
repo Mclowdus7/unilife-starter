@@ -10,10 +10,11 @@
 .banner-pic-text {
     
     position: absolute;
+    padding-bottom: 30px;
     color: var(--white);
     width: 40%;
-    left: 445px;
-    top: 100px;
+    left: 400px;
+    top: 60px;
     font-size:x-large;
     
    

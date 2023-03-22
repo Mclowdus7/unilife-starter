@@ -28,7 +28,7 @@ function AllCities() {
       <BannerPic 
             title={citiesTitle}
             slogan={citiesSlogan} />
-            <h2>Search by City</h2>
+            <h2 className='cities-header'>Search by City</h2>
       <div className='cities-button-container'>
         {
             cities.map(item => (

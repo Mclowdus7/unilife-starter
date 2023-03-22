@@ -5,7 +5,7 @@ import axios from 'axios';
 import BookingPic from '../../assets/BookingPic.png'
 
 
-function BookingForm() {
+function BookingForm({closeBooking}) {
 
     const {id} = useParams()
     const [address, setAddress] = React.useState()
@@ -24,6 +24,7 @@ function BookingForm() {
 
   return (
     <div className='booking-form-container'>
+        <h1 className='x-button'onClick={() => closeBooking(false)}>X</h1>
         <div className='left-side'>
             <h2>Book a Viewing</h2>
             <p>{address?.street}, {address?.city}, {address?.postcode}</p>

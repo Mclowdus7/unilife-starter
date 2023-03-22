@@ -2,7 +2,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
+    background-color: azure;
+    align-items: center;
+    width: 80%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 10%;
+    top: 10%;
+    
+    
+    height: 80%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+
 }
 
 .left-side{
@@ -20,6 +31,7 @@
     justify-content: space-between;
     align-items: center;
     width: 50%;
+    height: 100%;
 }
 
 #booking-pic{
@@ -53,4 +65,12 @@
     background-color: var(--button);
     color: var(--white);
     width: 100%;
+}
+
+.x-button{
+    top: 5%;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 100px;
+    height: 100%;
 }

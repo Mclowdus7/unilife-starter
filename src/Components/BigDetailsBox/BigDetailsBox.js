@@ -1,19 +1,28 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './BigDetailsBox.css'
 import bluebath from '../../assets/bluebath.png'
 import bluebed from '../../assets/bluebed.png'
 import {SlHeart} from "react-icons/sl";
 import {Link} from 'react-router-dom';
+import {FavoriteContext} from '../../contexts/FavoriteContext';
+import BookingForm from '../BookingForm/BookingForm';
+
+
 
 function BigDetailsBox({details}) {
 
+        const {favorites, setFavorites} = useContext(FavoriteContext)
         const [added, setAdded] = React.useState(false)
 
-        const handleShortlist = () => {
+        const handleFavorites= () => {
+                setFavorites([...favorites, {details}])
                 setAdded(!false)
-                //save in local storage
-                
-              }
+                // localStorage.setItem ("added", !added)
+               }
+
+        const [openBooking, setOpenBooking] = React.useState(false);
+
+
         
         
   return (
@@ -61,8 +70,12 @@ function BigDetailsBox({details}) {
                     </div>
             </div>
             <div className='button-container'>
-                    <button onClick={handleShortlist} className='shortlist'><SlHeart className='heart' />{added? "Added!" : "Shortlist"}</button>
-                    <Link to={`/booking/${details?._id}`}><button className='book'>Book Viewing</button></Link>
+                    <button style={{
+          
+          color: added ? 'red' : '',
+        }} onClick={handleFavorites} className='shortlist'><SlHeart className='heart' /></button>
+                    <button className='book' onClick={() => {setOpenBooking(true)}}>Book Viewing</button>
+                    {openBooking && <BookingForm closeBooking={setOpenBooking} />}
             </div>
     </div>
   )

@@ -2,13 +2,14 @@ import React from 'react'
 import './ContactForm.css'
 import Contact from '../../assets/Contact.png'
 
-function ContactForm() {
+function ContactForm({closeContact}) {
   return (
     <div className='contact-form-container'>
+    <h1 className='x-button'onClick={() => closeContact(false)}>X</h1>
     <div className='left-side'>
-        <h2>Contact Us</h2>
-        <p>Feel free to contact us if you have any questions.<br></br>
-Looking forward to hear from you.</p>
+        <h2 className='contact-header'>Contact Us</h2>
+        <h4 className='contact-subtext'>Feel free to contact us if you have any questions.<br></br>
+Looking forward to hear from you.</h4>
         <form>  
                 <div className='name-box'>
                     <label for = 'name'>Name</label>

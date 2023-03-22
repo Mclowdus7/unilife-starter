@@ -33,9 +33,11 @@
 }
 
 .blue-right {
-    width: 40%;
+    width: 35%;
     display: flex;
     justify-content: space-between;
+   
+
 }
 
 .bedroom-count, .bathroom-count {

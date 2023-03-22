@@ -9,6 +9,8 @@ import PropertyDetails from './Pages/PropertyDetails/PropertyDetails';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import BookingForm from './Components/BookingForm/BookingForm';
 import ContactForm from './Components/ContactForm/ContactForm';
+import Favorites from './Pages/Favorites/Favorites';
+import FavoriteContextProvider from './contexts/FavoriteContext';
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+        <FavoriteContextProvider>
           <Header />
               <Routes>
                   <Route path="/" element={<Homepage />} />
@@ -27,8 +30,10 @@ function App() {
                   <Route path="/propertydetails/:id" element={<PropertyDetails />} />
                   <Route path="/booking/:id" element={<BookingForm />} />
                   <Route path='/contact' element={<ContactForm />} />
+                  <Route path='/favorites' element={<Favorites />} />
               </Routes>
-          <Footer />
+            <Footer />
+          </FavoriteContextProvider>
        </BrowserRouter>
     </div>
   );
