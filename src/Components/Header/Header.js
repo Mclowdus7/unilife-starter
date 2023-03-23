@@ -20,7 +20,7 @@ function Header() {
         </div>
         <div className='links-container'>
             <Link to={'/favorites'}><p><SlHeart className='icon' />Shortlist</p></Link>
-           <p onClick={() => {setOpenContact(true)}}><SlEnvolope className='icon' />Contact Us</p>
+           <p className='contact' onClick={() => {setOpenContact(true)}}><SlEnvolope className='icon' />Contact Us</p>
            {openContact && <ContactForm closeContact={setOpenContact} />}
         </div>
       

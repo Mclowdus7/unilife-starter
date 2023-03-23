@@ -39,3 +39,7 @@ margin: 25px;
    margin-left: 5px;
    
 }
+
+.contact:hover{
+   cursor: pointer;
+}
