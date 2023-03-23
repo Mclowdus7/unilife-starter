@@ -8,7 +8,7 @@ import CityPropertyCard from '../../Components/CityPropertyCard/CityPropertyCard
 
 function Favorites() {
 
-  const {favorites, setFavorites} = useContext(FavoriteContext)
+  const {favorites} = useContext(FavoriteContext)
 
   return (
     <div className='favorites-container'>

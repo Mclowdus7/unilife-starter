@@ -2,7 +2,7 @@ import React from 'react'
 import './Properties.css'
 import axios from 'axios';
 import PropertiesCard from '../PropertiesCard/PropertiesCard';
-import { Link } from 'react';
+
 
 
 function Properties() {

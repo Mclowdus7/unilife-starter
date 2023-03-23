@@ -3,7 +3,6 @@ import './BigDetailsBox.css'
 import bluebath from '../../assets/bluebath.png'
 import bluebed from '../../assets/bluebed.png'
 import {SlHeart} from "react-icons/sl";
-import {Link} from 'react-router-dom';
 import {FavoriteContext} from '../../contexts/FavoriteContext';
 import BookingForm from '../BookingForm/BookingForm';
 
@@ -41,14 +40,14 @@ function BigDetailsBox({details}) {
                     <div className='bedrooms'>
                         <h4>Bedrooms</h4>
                             <div className='bedroom-count'>
-                                    <img id='bedroom-pic' src={bluebed} />
+                                    <img alt='' id='bedroom-pic' src={bluebed} />
                                     <h3>{details?.bedroom_count}</h3>
                             </div>
                     </div>
                     <div className='bathrooms'>
                         <h4>Bathrooms</h4>
                             <div className='bathroom-count'>
-                                    <img className='bathroom-pic' src={bluebath} />
+                                    <img alt='' className='bathroom-pic' src={bluebath} />
                                     <h3>{details?.bathroom_count}</h3>
                             </div>
                     </div>

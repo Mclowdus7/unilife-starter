@@ -29,7 +29,7 @@ Looking forward to hear from you.</h4>
      </div>
      <div className='right-side'>
         <div className='pic-container'>
-            <img id='contact-pic' src={Contact}/>
+            <img alt='contact-icon' id='contact-pic' src={Contact}/>
         </div>
         <div className='email-box'>
                     <label for = 'email'>Email</label>

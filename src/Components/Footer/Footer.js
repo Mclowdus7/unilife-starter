@@ -15,16 +15,16 @@ function Footer() {
             </div>
             <div className='footer-media-container'>
                 <h1>Let's socialize</h1>
-                <a href=''><MdFacebook className='icon'/>Facebook</a>
-                <a href=''><AiFillTwitterCircle className='icon'/>Twitter</a>
-                <a href=''><AiFillInstagram className='icon'/>Instagram</a>
+                <p><MdFacebook className='icon'/>Facebook</p>
+                <p><AiFillTwitterCircle className='icon'/>Twitter</p>
+                <p><AiFillInstagram className='icon'/>Instagram</p>
             </div>
         </div>
         <div className='footer-bottom-bar'>
             <div className='bottom-bar-links'>
-                <a href=''>About Us</a>
-                <a href=''>Terms & Conditions</a>
-                <a href=''>Privacy & Cookie Policies</a>
+                <p>About Us</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy & Cookie Policies</p>
             </div>
             <div className='bottom-bar-info'>
                 <p>2022</p>

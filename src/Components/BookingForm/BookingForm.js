@@ -18,7 +18,7 @@ function BookingForm({closeBooking}) {
                 setAddress(res.data.address)
             })
             .catch(err => console.log(err))
-       
+            //eslint-disable-next-line
     },[] 
 )
 
@@ -45,7 +45,7 @@ function BookingForm({closeBooking}) {
          </div>
          <div className='right-side'>
             <div className='pic-container'>
-                <img id='booking-pic' src={BookingPic}/>
+                <img alt='booking'id='booking-pic' src={BookingPic}/>
             </div>
             <div className='message-box'>
                 <label for = 'message'>Message</label>

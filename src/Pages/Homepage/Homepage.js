@@ -59,8 +59,8 @@ function Homepage() {
       </div>
       <div className='extra-info-container'>
             <div className='extra-icons'>
-                <img src={househHand} />
-                <img src={blueHeart} />
+                <img alt='logo' src={househHand} />
+                <img alt='favorite-icon' src={blueHeart} />
             </div>
             <div className='extra-text'>
                 <Extra header={header4}
@@ -70,7 +70,7 @@ function Homepage() {
                 <button>Search & Compare</button>
             </div> 
             <div className='extra-img'>
-              <img src={man} />
+              <img alt='man' src={man} />
             </div>
       </div>
     </div>

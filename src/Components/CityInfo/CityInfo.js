@@ -10,7 +10,7 @@ function CityInfo({city}) {
               <p>{city?.universities}</p>
           </div>
           <div className='city-info-image'>
-              <img src={city?.image_url} />
+              <img alt='city-pic' src={city?.image_url} />
           </div>
     </div>
   )
